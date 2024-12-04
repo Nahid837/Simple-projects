@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with Nahid Logo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: #333;
+            padding: 20px;
+            background: linear-gradient(45deg, #ff9a8b, #ff6a88, #d69f8e);
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .logo-container:hover {
+            transform: scale(1.1);
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #0084ff;
+            color: #0084ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            font-size: 24px;
+            margin-right: 10px;
+            box-shadow: 0 0 20px rgba(0, 132, 255, 0.7);
+            animation: hue-rotate 4s infinite linear;
+        }
+        .logo-name {
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff9a8b, #ff6a88, #d69f8e);
+            -webkit-background-clip: text;
+            color: transparent;
+            padding: 0 10px;
+        }
+
+        @keyframes hue-rotate {
+            0% {
+                box-shadow: 0 0 20px rgba(0, 132, 255, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="icon">&lt;/&gt;</div>
+        <div class="logo-name">
+            Code <span>with</span> Nahid
+        </div>
+    </div>
+</body>
+</html>
